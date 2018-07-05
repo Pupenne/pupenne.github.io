@@ -879,9 +879,6 @@ footer {
 .about__btns {
   display: block;
   text-align: right; }
-  @media screen and (max-width: 768px) {
-    .about__btns {
-      margin-right: 3.75rem; } }
   @media screen and (max-width: 480px) {
     .about__btns {
       margin: 0;
