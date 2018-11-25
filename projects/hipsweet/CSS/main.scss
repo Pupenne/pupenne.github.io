@@ -1,0 +1,24 @@
+
+
+// layout
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+
+
+// font
+@import "_misc/font";
+
+//sections
+
+@import "sections/plelod_login";
+@import "sections/first-page";
+@import "sections/info-page";
+@import "sections/page-products";
+@import "sections/command-page";
+@import "sections/question-page";
+@import "sections/map-page";
+@import "sections/footer";
+
+
+

@@ -1,0 +1,97 @@
+.info-page{
+	background: #ffffff; /* Old Browsers */
+	background: -webkit-radial-gradient(at 350px 650px,#ffffff,#c9c8c9); /*Safari 5.1-6*/
+	background: -o-radial-gradient(at 350px 650px,#ffffff,#c9c8c9); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(at 350px 650px,#ffffff,#c9c8c9); /*Fx 3.6-15*/
+	background: radial-gradient(at 350px 650px, #ffffff, #c9c8c9); /*Standard*/
+	padding-bottom: 1px;
+	min-height: rem(760px);
+	min-width: rem(1100px);
+	& .container{
+		min-height: rem(760px);
+		background-image: url(../img/info/coocer.png);
+		background-repeat: no-repeat;
+		background-size: rem(380px) rem(713px);
+		background-position: rem(700px) 100%;
+	}
+}
+
+.info-wrap{
+	display: flex;
+	height: 100%;
+	padding-top: 70px;
+	padding-bottom: 55px;
+	flex-direction: column;
+	justify-content: center;
+	color: #747474;
+}
+
+.info__directions{
+	width: rem(400px);
+}
+
+.desc-caption{
+	&.info{
+		color: #2b2f5f;
+		margin-bottom: rem(50px);
+	}
+}
+
+.desc-description.info{
+	margin-bottom: rem(70px);
+
+	& p{
+		font-size: rem(15px);
+	}
+}
+
+.info__icon{
+	width: 625px;
+}
+
+.infi__icon_list{
+	display: block;
+}
+
+.info__icon_item{
+	display: inline-block;
+	width: 145px;
+	height: 160px;
+	margin-right: rem(60px);
+	margin-bottom: 20px;
+
+	& .text{
+		@include malina();
+		font-size: rem(16px);
+	}
+}
+
+.info_img{
+	position: relative;
+	width: rem(90px);
+	height: rem(90px);
+	border-radius: 50%;
+	background-color: #c7c8ce;
+	margin: 0 auto 25px;
+	&.cook img{
+		position: absolute;
+		max-height: 105px;
+		left: -13px;
+		top: -7px;
+	}
+
+	&.ingr img{
+		position: absolute;
+		max-height: 85px;
+		left: -22px;
+		top: 8px;
+	}
+
+
+	&.love img{
+		position: absolute;
+		max-height: 95px;
+		left: -13px;
+		top: -2px;
+	}
+}

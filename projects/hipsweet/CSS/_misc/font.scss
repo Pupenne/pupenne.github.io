@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ALS Malina';
+    src: url('../Font/ALSMalina.woff2') format('woff2'),
+        url('../Font/ALSMalina.woff') format('woff'),
+        url('../Font/ALSMalina.svg#ALSMalina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin malina(){
+        font-family: 'ALS Malina';
+}

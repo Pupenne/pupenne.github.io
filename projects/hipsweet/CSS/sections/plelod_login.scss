@@ -1,0 +1,57 @@
+.preloader{
+	display: flex;
+	position: fixed; 
+  	left: 0; 
+  	top: 0; 
+	right: 0; 
+  	bottom: 0; 
+	background: #df3f42; /* Old Browsers */
+	background: -webkit-radial-gradient(at 350px 650px,#df3f42,#a4151b); /*Safari 5.1-6*/
+	background: -o-radial-gradient(at 350px 650px,#df3f42,#a4151b); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(at 350px 650px,#df3f42,#a4151b); /*Fx 3.6-15*/
+	background: radial-gradient(circle at 350px 650px, #df3f42, #a4151b); /*Standard*/
+	z-index: 5;
+}
+
+.load{
+	margin: auto;
+
+	& .logo{
+		display: flex;
+		flex-direction: column-reverse;
+		height: 220px;
+		
+		& .load_text{
+			display: block;
+			margin: 0 auto;
+			@include malina();
+			font-size: 20px;
+			margin-bottom: 20px;
+			color: #393939;
+		}
+
+		& .logo-text{
+			display: block;
+			margin: 0;
+			margin-bottom: 10px;
+			font-size: 62px;
+			line-height: 62px;
+		}
+
+		& img {
+			display: block;
+			height: 89px;
+			width: 107px;
+			margin: 0 auto;
+			padding-bottom: 15px;
+			animation: spin 1s linear infinite;
+		}
+	}
+
+
+}
+
+@keyframes spin {
+	from  { transform: rotate(0deg); }
+	to    { transform: rotate(360deg); }
+}

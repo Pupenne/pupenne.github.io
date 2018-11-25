@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ru-RU"> <!--<![endif]-->
+
+<!-- <html lang="ru-RU"> -->
+<head>
+	<meta charset="UTF-8">
+	<title>Hipsweet</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="">
+	<link rel="stylesheet" href="build/main.css">
+	<!-- <script src="js/modernizr.js"></script> -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<0b996b3e-08d1-4eb5-87dd-edff5bcbeff7>&lang=ru_RU" type="text/javascript">
+    </script>
+
+</head>
+<body>
+	<div class="preloader">
+		<div class="load">
+			<div class="logo">
+				<img src="img/header/logo.png" alt="Logo">
+				<span class="load_text">Допекаем тортик</span>
+				<span class="logo-text">Hipsweet</span>
+			</div>
+		</div>
+	</div>
+	<div class="first-page">
+		<div class="container">
+			<header class="header">
+				<div class="header_left">
+					<div class="logo">
+						<img src="img/header/logo.png" alt="Logo">
+						<span class="logo-text">Hipsweet</span>
+					</div>
+				</div>
+				<div class="header__right">
+					<nav class="header-menu">
+						<ul class="heder-menu__list">
+							<li class="header-menu__item">
+								<div class="heder-menu__link">Сладости</div>
+								<ul class="header__list sweet">
+									<div class="slide-triangle"></div>
+									<li class="header__item">Сладость 1</li>
+									<li class="header__item activ">Sweet Cupcake</li>
+									<li class="header__item">Сладость 3</li>
+									<li class="header__item">Сладость 4</li>
+								</ul>
+							</li>
+							<li class="header-menu__item">
+								<div class="heder-menu__link after_none">Доставка</div>
+							</li>
+							<li class="header-menu__item">
+								<div class="heder-menu__link">Компания</div>
+								<ul class="header__list compani">
+									<div class="slide-triangle"></div>
+									<li class="header__item activ">Заглавная</li>
+									<li class="header__item">Почему так вкусно</li>
+									<li class="header__item">Мы поставляем</li>
+									<li class="header__item">Комманда</li>
+									<li class="header__item">Вопросы</li>
+									<li class="header__item">Карта</li>
+								</ul>								
+							</li>
+							<li class="header-menu__item">
+								<div class="heder-menu__link">Команда</div>
+								<ul class="header__list command">
+									<div class="slide-triangle"></div>
+									<li class="header__item activ" data-command-name="toni">Тони Ройстер</li>
+									<li class="header__item" data-command-name="richard">Ричард Джейс</li>
+									<li class="header__item" data-command-name="marti">Марти Модстер</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="wrap-heder-link">
+						<div class="header__login">
+							<a href="#" class="heder-link heder-link_login"></a>
+							<div class="header__login_bg">
+								<div class="header__warp_login_form">
+									<form action="" class="header__form-login">
+										<div class="header__form_close">X</div>
+										<span class="header__login_caption">Авторизация</span>
+										<input type="text" name="name" placeholder="Введиет ваше Имя" class="command__form_input name">
+										<input type="email" name="email" placeholder="Введиет ваш Email" class="command__form_input email">
+										<input type="submit" class="hed__login_submit" value="Войти">
+									</form>
+								</div>
+							</div>
+						</div>
+						<form class="form__search">
+							<input type="search" class="hed__search_input" placeholder="Поиск" name="search">
+							<input type="submit" class="hed__search_submit" value="">
+						</form>							
+					</div>
+				</div>
+			</header>
+			<div class="first-page__slider">
+				<a class="first-page__slider__control_back"></a>
+				<a class="first-page__slider__control_forvard"></a>
+				<ul class="slider__list">
+					<li class="first-page__slider_item">
+						<div class="first-page__slider_recipe">
+							<div class="slider_recipe">
+								<a href="#" class="slider__link_recipe">
+									<div class="heder-link heder-link_recipe">
+									</div>
+									<span class="text">Ингредиенты</span>
+									<ul class="recipe__list">
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico wheat"></div>
+												<span class="recipe__ingr_text">
+													мука пшеничная
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												200 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico egg"></div>
+												<span class="recipe__ingr_text">
+													яйце продукты
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												3 шт.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico sugar"></div>
+												<span class="recipe__ingr_text">
+													сахарный песок
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												20 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico butter"></div>
+												<span class="recipe__ingr_text">
+													масло сливочное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												50 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico milk"></div>
+												<span class="recipe__ingr_text">
+													молоко сгущеное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												100 г.
+											</span>
+										</li>
+									</ul>
+								</a>
+							</div>
+							<div class="slider_storage-time">
+								<span class="text">срок хранения</span>
+								<span class="time">120 часов</span>
+							</div>
+						</div>
+						<div class="first-page__slider_icon">
+							<img src="img/header/Cake1.png" alt="">
+						</div>
+						<div class="first-page__slider_desc">
+							<div class="desc-caption first">
+								<h2>Сладость 1</h2>
+							</div>
+							<div class="desc-description first">
+								<p>
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью 
+									с нанесением сеточки из белой шоколадной глазури
+								</p>
+							</div>
+							<div class="f-p__slider_desc-buy">
+								<span class="price activ">
+									199 &#164;
+								</span>
+								<a class="btn_order">
+									Заказать
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="first-page__slider_item activ">
+						<div class="first-page__slider_recipe">
+							<div class="slider_recipe">
+								<a href="#" class="slider__link_recipe">
+									<div class="heder-link heder-link_recipe">
+									</div>
+									<span class="text">Ингредиенты</span>
+									<ul class="recipe__list">
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico wheat"></div>
+												<span class="recipe__ingr_text">
+													мука пшеничная
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												200 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico egg"></div>
+												<span class="recipe__ingr_text">
+													яйце продукты
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												3 шт.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico sugar"></div>
+												<span class="recipe__ingr_text">
+													сахарный песок
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												20 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico butter"></div>
+												<span class="recipe__ingr_text">
+													масло сливочное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												50 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico milk"></div>
+												<span class="recipe__ingr_text">
+													молоко сгущеное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												100 г.
+											</span>
+										</li>
+									</ul>
+								</a>
+							</div>
+							<div class="slider_storage-time">
+								<span class="text">срок хранения</span>
+								<span class="time">120 часов</span>
+							</div>
+						</div>
+						<div class="first-page__slider_icon">
+							<img src="img/header/Cake1.png" alt="">
+						</div>
+						<div class="first-page__slider_desc">
+							<div class="desc-caption first">
+								<h2>Sweet Cupcake</h2>
+							</div>
+							<div class="desc-description first">
+								<p>
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью 
+									с нанесением сеточки из белой шоколадной глазури
+								</p>
+							</div>
+							<div class="f-p__slider_desc-buy">
+								<span class="price activ">
+									199 &#164;
+								</span>
+								<a class="btn_order">
+									Заказать
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="first-page__slider_item">
+						<div class="first-page__slider_recipe">
+							<div class="slider_recipe">
+								<a href="#" class="slider__link_recipe">
+									<div class="heder-link heder-link_recipe">
+									</div>
+									<span class="text">Ингредиенты</span>
+									<ul class="recipe__list">
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico wheat"></div>
+												<span class="recipe__ingr_text">
+													мука пшеничная
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												200 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico egg"></div>
+												<span class="recipe__ingr_text">
+													яйце продукты
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												3 шт.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico sugar"></div>
+												<span class="recipe__ingr_text">
+													сахарный песок
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												20 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico butter"></div>
+												<span class="recipe__ingr_text">
+													масло сливочное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												50 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico milk"></div>
+												<span class="recipe__ingr_text">
+													молоко сгущеное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												100 г.
+											</span>
+										</li>
+									</ul>
+								</a>
+							</div>
+							<div class="slider_storage-time">
+								<span class="text">срок хранения</span>
+								<span class="time">120 часов</span>
+							</div>
+						</div>
+						<div class="first-page__slider_icon">
+							<img src="img/header/Cake1.png" alt="">
+						</div>
+						<div class="first-page__slider_desc">
+							<div class="desc-caption first">
+								<h2>Сладость 3</h2>
+							</div>
+							<div class="desc-description first">
+								<p>
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью 
+									с нанесением сеточки из белой шоколадной глазури
+								</p>
+							</div>
+							<div class="f-p__slider_desc-buy">
+								<span class="price activ">
+									199 &#164;
+								</span>
+								<a class="btn_order">
+									Заказать
+								</a>
+							</div>
+						</div>
+					</li>
+					<li class="first-page__slider_item">
+						<div class="first-page__slider_recipe">
+							<div class="slider_recipe">
+								<a href="#" class="slider__link_recipe">
+									<div class="heder-link heder-link_recipe">
+									</div>
+									<span class="text">Ингредиенты</span>
+									<ul class="recipe__list">
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico wheat"></div>
+												<span class="recipe__ingr_text">
+													мука пшеничная
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												200 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico egg"></div>
+												<span class="recipe__ingr_text">
+													яйце продукты
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												3 шт.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico sugar"></div>
+												<span class="recipe__ingr_text">
+													сахарный песок
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												20 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico butter"></div>
+												<span class="recipe__ingr_text">
+													масло сливочное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												50 г.
+											</span>
+										</li>
+										<li class="recipe__item">
+											<div class="recipe__ingr">
+												<div class="recipe__ingr_ico milk"></div>
+												<span class="recipe__ingr_text">
+													молоко сгущеное
+												</span>
+											</div>
+											<span class="recipe__ingr_mass">
+												100 г.
+											</span>
+										</li>
+									</ul>
+								</a>
+							</div>
+							<div class="slider_storage-time">
+								<span class="text">срок хранения</span>
+								<span class="time">120 часов</span>
+							</div>
+						</div>
+						<div class="first-page__slider_icon">
+							<img src="img/header/Cake1.png" alt="">
+						</div>
+						<div class="first-page__slider_desc">
+							<div class="desc-caption first">
+								<h2>сладость 4</h2>
+							</div>
+							<div class="desc-description first">
+								<p>
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью 
+									с нанесением сеточки из белой шоколадной глазури
+								</p>
+							</div>
+							<div class="f-p__slider_desc-buy">
+								<span class="price activ">
+									199 &#164;
+								</span>
+								<a class="btn_order">
+									Заказать
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="first-page__slider_nav">
+					<div></div>
+					<li class="f-p__slider_nav_item"></li>
+					<li class="f-p__slider_nav_item activ"></li>
+					<li class="f-p__slider_nav_item"></li>
+					<li class="f-p__slider_nav_item"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="info-page">
+		<div class="container">
+			<div class="info-wrap">
+				<div class="info__directions">
+					<div class="desc-caption info">
+						<h2>Почему так вкусно?</h2>
+					</div>
+					<div class="desc-description info">
+						<p>
+						В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка 
+						и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури
+						</p>
+					</div>
+				</div>
+				<div class="info__icon">
+					<ul class="infi__icon_list">
+						<li class="info__icon_item">
+							<div class="info_img cook">
+								<img src="img/info/Cook.png" alt="">
+							</div>
+							<span class="text">
+								Лучшие повара своего дела
+							</span>
+						</li>
+						<li class="info__icon_item">
+							<div class="info_img ingr">
+								<img src="img/info/ingridiens.png" alt="">
+							</div>
+							<span class="text">
+								Свежие ингредиенты
+							</span>
+						</li>
+						<li class="info__icon_item">
+							<div class="info_img love">
+								<img src="img/info/Love.png" alt="">
+							</div>
+							<span class="text">
+								Приготовлено с любовью
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-products">
+		<div class="container">
+			<div class="productions__wrap">
+				<div class="productions__caption">
+					<div class="desc-caption products">
+						<h2>Мы поставляем</h2>
+					</div>
+					<div class="desc-description products">
+						<p>
+						Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку 
+						вы можете заполнив <a href="" class="products__link-form">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.
+						</p>
+					</div>
+				</div>
+				<ul class="products__list">
+					<li class="products__item">
+						<div class="products__item_icon Cake" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Торты</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon biscuit" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Печенье</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon donuts" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Пончики</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon Rolls" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Рулеты</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon marshmallows" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Зефир</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon Chocolate" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Шоколад</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon pancake" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Пероженые</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+					<li class="products__item">
+						<div class="products__item_icon candies" style="background-image: url(img/products/product_item.png)"></div>
+						<div class="products__item-caption">
+							<h3>Конфеты</h3>
+						</div>
+						<div class="products__item-desc">
+							<p>
+								Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+							</p>
+						</div>
+					</li>
+				</ul>												
+			</div>
+		</div>
+	</div>
+	<div class="command-page">
+		<div class="container">
+			<div class="wrap-command">
+				<div class="command_top">
+					<div class="caption-command">
+						<h2>Наша команда</h2>
+					</div>
+					<ul class="command__list">
+						<div></div>
+						<li class="command__item activ"  data-command-name="toni">
+							<div class="command__name">
+								Тони Ройстер
+							</div>
+							<div class="command__post">
+								Главный шеф повар
+							</div>
+						</li>
+						<li class="command__item"  data-command-name="richard">
+							<span class="command__name">
+								Ричард Джейс
+							</span>
+							<span class="command__post">
+								Главный Кондитер
+							</span>
+						</li>
+						<li class="command__item"  data-command-name="mati">
+							<span class="command__name">
+								Марти Модстер
+							</span>
+							<span class="command__post">
+								Дегустатор
+							</span>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="command_bottom">
+					<ul class="command__biographi_list">
+						<div></div>
+						<li class="command__biographi-item activ">
+							<div class="command__biographi">
+								<p>
+									<i>Тони родился в Ленинграде  в 1985 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся 
+									в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Дмитрия Медведева на открытых 
+									и закрытых мероприятия.</i>
+								</p>
+								<p>
+									<i><b>Тони неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</i></b>
+								</p>
+							</div>						
+						</li>
+						<li class="command__biographi-item">
+							<div class="command__biographi">
+								<p>
+									<i>Ричард родился в Ленинграде  в 1975 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся 
+									обслуживали Президента России Дмитрия Медведева на открытых 
+									и закрытых мероприятия.</i>
+								</p>
+								<p>
+									<i><b>Ричард неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</i></b>
+								</p>
+							</div>						
+						</li>
+						<li class="command__biographi-item">
+							<div class="command__biographi">
+								<p>
+									<i>Марти родился в Ленинграде  в 1980 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся 
+									в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично 
+									в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично 
+									обслуживали Президента России Дмитрия Медведева на открытых 
+									и закрытых мероприятия.</i>
+								</p>
+								<p>
+									<i><b>Марти неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</i></b>
+								</p>
+							</div>						
+						</li>
+						
+					</ul>
+					<ul class="command__desc_post_list">
+						<div></div>
+						<li class="command__desc_post_item activ">
+							<div class="command__desc_post">
+								<p>
+									<i>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал 
+									в Париже на мировом фестивале Omnivore Paris 
+									в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. 
+									на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, 
+									где узнал все о региональных продуктах 
+									и особенностях кухни. В 2013 участвовал 
+									в фестивале «Северная кухня»; выезжал 
+									на гастроли в Москву, открывая «pop-up» проект DOOR 19.
+									 
+									Тони занимается развитием и инновациями 
+									в русской гастрономии, а также увлекается искусством — пишет картины.</i>
+								</p>
+							</div>
+						</li>						
+						<li class="command__desc_post_item">
+							<div class="command__desc_post">
+								<p>
+									<i>Главный Кондитер является постоянным участником различных номинаций и фестивалей: выступал 
+									в Париже на мировом фестивале Omnivore Paris 
+									в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид 
+									где узнал все о региональных продуктах 
+									и особенностях кухни. В 2013 участвовал 
+									в фестивале «Северная кухня»; выезжал 
+									на гастроли в Москву, открывая «pop-up» проект DOOR 19.
+									 
+									Ричард занимается развитием и инновациями 
+									в русской гастрономии, а также увлекается искусством — пишет картины.</i>
+								</p>
+							</div>
+						</li>						
+						<li class="command__desc_post_item">
+							<div class="command__desc_post">
+								<p>
+									<i>Дегустатор является постоянным участником различных номинаций и фестивалей: выступал 
+									в Париже на мировом фестивале Omnivore Paris 
+									в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. 
+									в Париже на мировом фестивале Omnivore Paris 
+									в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. 
+									на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, 
+									где узнал все о региональных продуктах 
+									и особенностях кухни. В 2013 участвовал 
+									в фестивале «Северная кухня»; выезжал 
+									на гастроли в Москву, открывая «pop-up» проект DOOR 19.
+									 
+									Марти занимается развитием и инновациями 
+									в русской гастрономии, а также увлекается искусством — пишет картины.</i>
+								</p>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="bl-command__form">
+					<div class="command__form_left">
+						<span class="form__caption">Заказать сейчас</span>
+					</div>
+					<div class="command__form_right">
+						<form action="" class="command__form">
+							<input type="text" name="name" placeholder="Введиет ваше Имя" class="command__form_input name">
+							<input type="email" name="email" placeholder="Введиет ваш Email" class="command__form_input email">
+							<input type="tel" name="tel" class="command__form_input tel" placeholder="8(___)-___-__-__">
+							<label for="checkbox" class="command__form_input_chec-lable"><input type="checkbox" id="checkbox" class="command__form_input_checkbox">Заказать обратный звонок</label>
+							<button type="submit" class="command__form_input_btn"></button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="question-page">
+		<div class="container">
+			<div class="wrap-question">
+				<div class="qiestion__caption">
+					<h1>Часто задаваемые вопросы</h1>
+				</div>
+				<ul class="question__list">
+					<li class="question__item">
+						<a href="#" class="qustion__acco_triger">Сколько по времени курьер доставляет заказ?</a>
+						<div class="question__content"><p>
+							В античное время и средние века курьерами называли посыльных, конных гонцов, доставлявших секретную 
+							и дипломатическую почту. ”аковой, например, была введенная в Римской империи Августом государственная курьерская служба, называвшаяся cursus publicus.
+
+							В допетровской России рассыльные (гонцы) были служилыми людьми, «по прибору» и содержались за счет государственной казны. Особая курьерская почтовая служба была основана в 1701 году Петром I на Смоленском 
+							и Архангельском трактах для доставки чрезвычайных скорых посылок с царскими грамотами. Военных посыльных называют фельдъегерями, (начиная с середины XVIII века), а доставляющих дипломатическую почту — дипкурьерами.
+						</p></div>
+					</li>
+					<li class="question__item">
+						<a href="#" class="qustion__acco_triger">Если курьер опоздал, будут ли какие то бонусы?</a>
+						<div class="question__content"><p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis in excepturi iste, voluptatibus, sapiente qui ipsum vel deserunt consequatur blanditiis.
+						</p></div>
+					</li>
+					<li class="question__item">
+					<a href="#" class="qustion__acco_triger">Добавляете ли вы какие либо консерванты в вашу продукцию?</a>
+						<div class="question__content"><p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nobis itaque architecto eaque omnis ipsum saepe assumenda. Eligendi repellendus nisi quasi cum, iste dolore at.
+						</p></div>
+					</li>
+					<li class="question__item">
+						<a href="#" class="qustion__acco_triger">Как долго готовиться у вас индивидуальный торт?</a>
+						<div class="question__content"><p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore ratione ipsa ea quo, aut sequi provident, magnam, deserunt officia officiis. Error magni, veniam dolor numquam laboriosam quae cupiditate nostrum.
+						</p></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="map-page">
+		<div id="map" class="map-yandex"></div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="wrap-foot">
+				<div class="logo foot">
+					<img src="img/header/logo.png" alt="Logo">
+					<span class="logo-text">Hipsweet</span>
+				</div>
+				<span class="cc">
+					© 2018 Все права защищены
+				</span>
+				<span class="address">
+					г. Москва, Вознесенский проспект 44 оф 166
+				</span>
+				<div class="social-bl">
+					<a href="" class="social__link fb"></a>
+					<a href="" class="social__link in"></a>
+					<a href="" class="social__link od"></a>
+					<a href="" class="social__link tv"></a>
+					<a href="" class="social__link vk"></a>
+				</div>
+
+			</div>
+		</div>
+	</footer class="footer">
+
+	<!-- scripts -->
+	
+	<script type="text/JavaScript"  src="JavaScript/jquery-3.3.1.min.js"></script>
+	<script type="text/JavaScript"  src="JavaScript/jquery.maskedinput.js"></script>
+	<script type="text/JavaScript"  src="JavaScript/scripts.js"></script>
+	
+</body>
+</html>

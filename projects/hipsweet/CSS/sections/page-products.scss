@@ -1,0 +1,116 @@
+.page-products{
+	background: #ffab27; /* Old browsers */
+	background: url(../img/products/bg_patern.png), -moz-linear-gradient(45deg, #ffab27 0%, #feb801 100%); /* FF3.6-15 */
+	background: url(../img/products/bg_patern.png), -webkit-linear-gradient(45deg, #ffab27 0%,#feb801 100%); 
+	background: url(../img/products/bg_patern.png), linear-gradient(45deg, #ffab27 0%,#feb801 100%); 
+	min-height: rem(1130px);
+	padding-bottom: 1px;
+	min-width: rem(1100px);
+}
+
+.productions__wrap{
+	display: flex;
+	flex-direction: column;
+}
+
+.productions__caption{
+	display: flex;
+	width: rem(800px);
+	flex-direction: column;
+	align-items:center;
+	margin: rem(110px) auto rem(30px);
+}
+
+.desc-caption.products{
+	color: #393939;
+	margin-bottom: rem(20px);
+}
+
+.desc-description.products{
+	width: 100%;   	//IE
+	color: #883213;
+	font-size: rem(15px);
+}
+
+.products__link-form{
+	color: #393939;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.products__list{
+	display: flex;
+	width: rem(1050px);
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.products__item{
+	display: flex;
+	width: rem(230px);
+	height: rem(410px);
+	flex-direction: column;
+	align-items:center;
+}
+
+.products__item_icon{
+	width: rem(230px);
+	height: rem(240px);
+	margin-bottom: rem(10px);
+
+	&.Cake{
+		background-position: -74px -84px;
+	}
+
+	&.biscuit{
+		background-position: -350px -84px;
+	}
+
+	&.donuts{
+		background-position: -622px -84px;
+	}
+
+	&.Rolls{
+		background-position: -893px -84px;
+	}
+
+	&.marshmallows{
+		background-position: -74px 322px;
+	}
+
+	&.Chocolate{
+		background-position: -350px 322px;
+	}
+
+	&.pancake{
+		background-position: -622px 322px;
+	}
+
+	&.candies{
+		background-position: -893px 322px;
+	}
+
+}
+
+.products__item-caption{
+	& h3{
+		@include malina();
+		font-size: rem(30px);
+		margin: 0;
+		color: #393939;
+		margin-bottom: rem(10px);
+	}
+}
+
+.products__item-desc{
+	width: 100%; //IE
+	& p{
+		color: #ab594a;
+		font-size: rem(13px);
+		text-align: center;
+		margin: 0;
+	}
+}

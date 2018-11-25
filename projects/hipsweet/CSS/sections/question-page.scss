@@ -1,0 +1,104 @@
+.question-page{
+	padding-bottom: 1px;
+	min-height: rem(760px);
+	min-width: rem(1100px);
+	background: #df3f42; /* Old Browsers */
+	background: -webkit-radial-gradient(at 350px 650px,#df3f42,#a4151b); /*Safari 5.1-6*/
+	background: -o-radial-gradient(at 350px 650px,#df3f42,#a4151b); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(at 350px 650px,#df3f42,#a4151b); /*Fx 3.6-15*/
+	background:
+		url(/img/question/1.png) no-repeat 0px -120px, 
+		url(/img/question/2.png) no-repeat 0px 100%,
+		url(/img/question/3.png) no-repeat 20% 25%,
+		url(/img/question/4.png) no-repeat 55% 160%,
+		url(/img/question/5.png) no-repeat 85% -150px,
+		url(/img/question/6.png) no-repeat calc(100% + 130px) 0px,
+		url(/img/question/7.png) no-repeat 100% 100%,
+		radial-gradient(circle at 350px 650px, #df3f42, #a4151b);  /*Standard*/
+	//background-size: 300px auto, 100% 100%;
+	background-blend-mode: multiply;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { //IE
+	.question-page{
+		background: radial-gradient(circle at 350px 650px, #df3f42, #a4151b); 
+	}
+}
+
+.wrap-question{
+	display: flex;
+	width: rem(900px);
+	height: 100%;
+    flex-direction: column;
+	margin: 0 auto;
+}
+
+.qiestion__caption{
+	text-align: center;
+	margin-top: rem(70px);
+	& h1,h2,h3,h4{
+		color: #fff;
+		font-size: rem(45px);
+		@include malina();
+	}
+	
+}
+
+.question__list{
+	display: block;
+	margin-top: rem(50px);
+}
+
+.question__item{
+	display: block;
+	list-style: decimal;
+	font-size: rem(22px);
+	color: #fff;
+	transition: all 0.5s;
+	padding: 0;
+	cursor: pointer;
+	margin: rem(15px) 0 rem(25px) 0;
+
+	&:first-child{
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+
+
+	&.activ{
+		color: #ffb100;
+
+		& .qustion__acco_triger{
+			color: #ffb100;
+			background: linear-gradient(to right, #fff 0px, transparent  0px) 0 100%/12px 3px repeat-X;
+		}
+
+
+	}
+}
+.question__content{
+	display: none;
+
+	& p{
+		//transition: all 0.5s;
+		display: block;
+		color: #fff;
+		font-size: rem(15px);
+		//transition: all 0.5s;
+		margin: 10px 0 0 (55px);
+		//margin-top: rem(10px);
+		//transform: scaleY(0);
+		//transform-origin: 0 0;
+	}
+}
+
+.qustion__acco_triger{
+	transition: all 0.5s;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: rem(22px);
+	padding: rem(20px) 0 rem(10px) 0;
+	background: linear-gradient(to right, #fff 7px, transparent  7px) 0 100%/12px 3px repeat-X ;
+}
